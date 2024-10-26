@@ -1,0 +1,27 @@
+$headerColor: #fff;
+$lightMode: #000;
+
+.main-header {
+    color: $headerColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s ease;
+
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    p {
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+.main-header.light {
+    color: $lightMode;
+}

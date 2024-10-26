@@ -1,0 +1,132 @@
+$whiteColor: #fff;
+$lightBg: #fefefe;
+$blueColor: #0079ff;
+$cardBg: #1e2a47;
+$infoBg: #141d2f;
+$lightColor: #697c9a;
+$lightInfos: #f6f8ff;
+
+.card-container {
+    background-color: $cardBg;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 37px -18px #000;
+    transition: all .3s ease;
+    overflow: auto;
+    scrollbar-width: thin;
+
+    &.light {
+        background-color: $lightBg;
+    }
+
+    .card-top {
+        &__user {
+            h2 > a{
+                color: $whiteColor;
+                text-decoration: none;
+                transition: all .2s ease;
+                white-space: nowrap;
+    
+                &:hover {
+                    color: darken($whiteColor, 25%);
+                }
+            }
+
+            a.light,
+            p.light {
+                color: $lightColor;
+            }
+    
+            h3 {
+                color: $blueColor;
+                font-size: 16px;
+            }
+    
+            p {
+                color: $whiteColor;
+                transition: all .2s ease;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 400px;
+            }
+        }
+    
+        &__date {
+            color: $whiteColor;
+            transition: all .3s ease;
+
+            &.light {
+                color: $lightColor;
+            }
+        }
+    }
+
+    .card-infos {
+        background-color: $infoBg;
+        color: $whiteColor;
+        padding: 30px 85px;
+        border-radius: 10px;
+        transition: all .3s ease;
+        border: 1px solid transparent;
+        width: max-content;
+
+        &.light {
+            background-color: $lightInfos;
+            border: 1px solid #eeee;
+            color: $lightColor;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+
+            &:first-child {
+                font-weight: 700;
+            }
+
+        }
+    }
+
+    .card-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        float: right;
+        text-align: center;
+        width: 100%;
+        
+        .contact-item {
+            display: flex;
+            justify-content: center;
+            column-gap: 8px;
+            margin: 5px;
+            width: max-content;
+
+            i {
+                color: $lightColor;
+                font-size: 20px;
+            }
+
+            span {
+                color: $whiteColor;
+
+                &.light {
+                    color: $lightColor;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .card-container {
+        overflow: scroll;
+    }
+}
+
+@media(max-width: 530px) {
+    .card-infos {
+        padding: 30px 5px !important;
+    } 
+}

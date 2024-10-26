@@ -1,0 +1,45 @@
+$blueColor: #0079ff;
+$darkColor: #1e2a47;
+$lightColor: #fefefe;
+
+form {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: $blueColor;
+        font-size: 24px;
+        -webkit-text-stroke: .3px $blueColor;
+    }
+
+    button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    input {
+        padding: 20px 10px;
+        padding-left: 45px;
+        padding-right: 60px;
+        border-radius: 10px;
+        box-shadow: 0 10px 37px -18px #000;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: $darkColor;
+        color: #fff;
+        transition: all .3s ease;
+
+        &.light {
+            background-color: $lightColor;
+            color: #000;
+        }
+    }
+}
