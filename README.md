@@ -42,3 +42,5 @@
 <h2>📚 Katkıda Bulunma</h2>
 
 <p>Katkıda bulunmak için lütfen projeyi forkladıktan sonra bir pull request gönderin. Her türlü geri bildirim ve öneri değerlidir!</p>
+
+<a href="https://github-finder-applicationn.netlify.app/" target="_blank">CANLI DEMO LINK</a>
