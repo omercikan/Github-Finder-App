@@ -32,7 +32,7 @@
 <ol>
   <pre><code>npm run build</code></pre>
   <p>Bu komut, projeyi canlıya hazır hale getiren optimize edilmiş dosyaları oluşturacaktır. Çıktılar <code>/build</code> klasöründe bulunur ve statik sunucularda dağıtılabilir.</p>
-  <li>Projeyi klonlayın: <code>git clone https://github.com/kullanici_adiniz/github-finder.git</code></li>
+  <li>Projeyi klonlayın: <code>git clone https://github.com/omercikan/Github-Finder-App.git</code></li>
   <li>Gerekli bağımlılıkları yükleyin: <code>npm install</code></li>
   <li>Projeyi başlatın: <code>npm start</code></li>
 </ol>
