@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import Card from './Card'
-import Loader from './Loader'
+import React, { useContext } from "react";
+import User from "./User";
+import Loader from "./Loading";
+import { UsersContext } from "../context/usersContext";
 
-export class UserList extends Component {
-  render() {
-    return (
-        this.props.loading ? <Loader/> :
-        <Card user={this.props.users} userOther={this.props.otherUser}/>
-    )
-  }
-}
+const UserList = () => {
+  const {state} = useContext(UsersContext);
+
+  return state.loading ? <Loader /> : <User user={state.users} userOther={state.otherUsers} />;
+};
 
 export default UserList;

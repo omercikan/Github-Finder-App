@@ -23,7 +23,7 @@ body.light {
 
 @media(max-width: 768px) {
     .parent-element {
-        max-width: auto !important;
-        margin: 0 1rem;
+        max-width: calc(100% - 2%) !important;
+        margin: 0rem auto;
     }
 }
